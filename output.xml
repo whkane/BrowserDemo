@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20210930 14:31:17.498" rpa="false" schemaversion="2">
+<suite id="s1" name="Browser Demo" source="C:\Users\valtteri.heiskanen\PycharmProjects\BrowserDemo\browser_demo.robot">
+<test id="s1-t1" name="Page Ids And Text">
+<for flavor="IN">
+<var>${browser}</var>
+<value>@{browsers}</value>
+<iter>
+<var name="${browser}">chromium</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:31:21.507" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\8391ac30-2436-4611-bd0e-bde7fbd7d0e5"}</msg>
+<msg timestamp="20210930 14:31:22.265" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\8391ac30-2436-4611-bd0e-bde7fbd7d0e5"}</msg>
+<status status="PASS" starttime="20210930 14:31:21.507" endtime="20210930 14:31:22.266"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:31:24.163" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:31:24.163" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:31:22.266" endtime="20210930 14:31:24.163"/>
+</kw>
+<kw name="Get Page Ids" library="Browser">
+<var>${ids}</var>
+<arg>ACTIVE</arg>
+<arg>ACTIVE</arg>
+<arg>ACTIVE</arg>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Returns a list of page ids based on the context and browser selection.
+See `Browser, Context and Page` for more information about Page and related concepts.</doc>
+<msg timestamp="20210930 14:31:24.175" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activePage": "page=26d30c8e-91d6-406a-8d61-7ccd70fa291f", "pages": [{"type": "page", "title": "Fuck democracy, this is dystocracy", "url": "http://dystocracy.com/", "id": "page=26d30c8e-91d6-406a-8d61-7ccd70fa291f", "timestamp": 1633001482.435}]}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:31:24.175" level="INFO">${ids} = ['page=26d30c8e-91d6-406a-8d61-7ccd70fa291f']</msg>
+<status status="PASS" starttime="20210930 14:31:24.163" endtime="20210930 14:31:24.175"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ids}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:31:24.176" level="INFO">['page=26d30c8e-91d6-406a-8d61-7ccd70fa291f']</msg>
+<status status="PASS" starttime="20210930 14:31:24.176" endtime="20210930 14:31:24.176"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:24.176" endtime="20210930 14:31:24.705"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=menu-item-97</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:31:24.705" endtime="20210930 14:31:24.766"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:24.766" endtime="20210930 14:31:24.768"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=menu-item-157</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:31:24.768" endtime="20210930 14:31:25.310"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:25.310" endtime="20210930 14:31:25.966"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=post-146</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:31:25.995" level="INFO">${text} = Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their f...</msg>
+<status status="PASS" starttime="20210930 14:31:25.966" endtime="20210930 14:31:25.995"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:31:25.996" level="INFO">Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their fate. I see small nation states repel empires. I see Europe stand up against the marauding hordes that raped and pillaged her for hundreds of years and say: No more! I see white headstones as far as the eye can see on those cliffs in Normandy. Headstones of men who did not want to go, but went anyway, because they knew it had to be done and they were the ones who had to do it. I see proud men who took a stand to protect what was theirs, and who paid the ultimate price, but did so willingly – gleefully even – knowing that the price was worth it because of who and what they paid it for, and that they would be remembered. I see heroes.
+
+And then I see you. And I see how you have failed them. What do you think the men who came before you would say to you if you were to cross the darkest water now and face them? Would they laugh at your weakness? Or would they cry if they saw all their sacrifices over centuries and generations being betrayed by you? How you willingly surrendered to those same hordes they protected their homes, their women and children from. How you sold the freedoms and independence they fought for to faceless centralised governments for a little personal gain? Would they drive their swords through you, and could you honestly say they were not justified in doing so?
+
+We have become a society of proud victims. The highest value in our inverted world is not to offend. The highest achievement to extract power and resources from better men by being a victim. Not to struggle, build, persevere and create something for you and for others. The modern slave does not strive to rise from under the yoke, but he uses the collective weight of the masses to pull everyone down to his level, so that others will not see how utterly useless he is. Does that make you proud? Does that give you a feeling of satisfaction? Is that all you are capable of? Why were those men on those beaches able to face the machine guns and climb up that cliff, but you can’t face disagreement or climb up off your own ass? Does it make you feel like you are entitled to something just because you belong to a victim class of your own choosing?
+
+Why would you want to be a victim? Why would you even strive to be equal? Why would you not want to be better? Diversity, tolerance, equality, those are all creeds of slaves. Weak men, who lack the imagination to become something, and the courage to make it happen. Let these worthless squirming victims be victims, and become gods. For gods is what you will be, when you renounce their slave morality, find your will to power, refuse to give them anything and become their masters. You are the descendants of great European men. Protectors, conquerors, explorers, inventors – men who built this world. Act like one and eventually deserve your place on the Elysian Fields by their side. Standing proud for what you accomplished, not what you happened to be.
+
+
+
+Slave Morality
+
+
+Once proud sons of once proud nations reduced to disciples of the lie
+From Pretorian guards and the three hundred to a frail victim class
+Across the churning Styx those who bled for you curse their progeny
+Elysian Fields grow barren as the men grow weak
+
+Behold the death of vitality
+Reign of king slave morality
+
+False prophets, desecration of power
+Diversity, tolerance, creed of the weak
+The truth will be revealed
+The traitor’s fate is sealed
+
+Devoured by wolves, inferiors plead for equality
+Titans have fallen, Olympians rise to end conformity
+Failure reassigned, scapegoats lynched, ressentiment the guiding light
+Daughter of Agenon, find your will to power, brothers of Minos, fight
+
+Behold the death of vitality
+Reign of king slave morality
+
+False prophets, desecration of power
+Diversity, tolerance, creed of the weak
+The truth will be revealed
+The traitor’s fate is sealed
+
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+
+</msg>
+<status status="PASS" starttime="20210930 14:31:25.995" endtime="20210930 14:31:25.996"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:31:25.998" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activePage": "page=26d30c8e-91d6-406a-8d61-7ccd70fa291f", "pages": [{"type": "page", "title": "Slave Morality", "url": "http://dystocracy.com/slave-morality-2/", "id": "page=26d30c8e-91d6-406a-8d61-7ccd70fa291f", "timestamp": 1633001482.435}]}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:31:25.999" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:31:26.000" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:31:26.001" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:31:26.004" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:31:26.014" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:31:25.996" endtime="20210930 14:31:26.015"/>
+</kw>
+<status status="PASS" starttime="20210930 14:31:21.507" endtime="20210930 14:31:26.015"/>
+</iter>
+<iter>
+<var name="${browser}">firefox</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:31:26.016" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\72c909ca-c754-4827-8990-fbcdc1e1c374"}</msg>
+<msg timestamp="20210930 14:31:30.229" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\72c909ca-c754-4827-8990-fbcdc1e1c374"}</msg>
+<status status="PASS" starttime="20210930 14:31:26.016" endtime="20210930 14:31:30.229"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:31:32.519" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:31:32.519" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:31:30.230" endtime="20210930 14:31:32.519"/>
+</kw>
+<kw name="Get Page Ids" library="Browser">
+<var>${ids}</var>
+<arg>ACTIVE</arg>
+<arg>ACTIVE</arg>
+<arg>ACTIVE</arg>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Returns a list of page ids based on the context and browser selection.
+See `Browser, Context and Page` for more information about Page and related concepts.</doc>
+<msg timestamp="20210930 14:31:32.529" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activePage": "page=026873a9-c270-4054-b2c7-91ff66d2281f", "pages": [{"type": "page", "title": "Fuck democracy, this is dystocracy", "url": "http://dystocracy.com/", "id": "page=026873a9-c270-4054-b2c7-91ff66d2281f", "timestamp": 1633001490.937}]}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:31:32.530" level="INFO">${ids} = ['page=026873a9-c270-4054-b2c7-91ff66d2281f']</msg>
+<status status="PASS" starttime="20210930 14:31:32.519" endtime="20210930 14:31:32.530"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ids}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:31:32.530" level="INFO">['page=026873a9-c270-4054-b2c7-91ff66d2281f']</msg>
+<status status="PASS" starttime="20210930 14:31:32.530" endtime="20210930 14:31:32.530"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:32.530" endtime="20210930 14:31:33.031"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=menu-item-97</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:31:33.031" endtime="20210930 14:31:33.118"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:33.118" endtime="20210930 14:31:33.119"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=menu-item-157</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:31:33.119" endtime="20210930 14:31:33.601"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:33.601" endtime="20210930 14:31:34.181"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=post-146</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:31:34.228" level="INFO">${text} = Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their f...</msg>
+<status status="PASS" starttime="20210930 14:31:34.181" endtime="20210930 14:31:34.228"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:31:34.228" level="INFO">Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their fate. I see small nation states repel empires. I see Europe stand up against the marauding hordes that raped and pillaged her for hundreds of years and say: No more! I see white headstones as far as the eye can see on those cliffs in Normandy. Headstones of men who did not want to go, but went anyway, because they knew it had to be done and they were the ones who had to do it. I see proud men who took a stand to protect what was theirs, and who paid the ultimate price, but did so willingly – gleefully even – knowing that the price was worth it because of who and what they paid it for, and that they would be remembered. I see heroes.
+
+And then I see you. And I see how you have failed them. What do you think the men who came before you would say to you if you were to cross the darkest water now and face them? Would they laugh at your weakness? Or would they cry if they saw all their sacrifices over centuries and generations being betrayed by you? How you willingly surrendered to those same hordes they protected their homes, their women and children from. How you sold the freedoms and independence they fought for to faceless centralised governments for a little personal gain? Would they drive their swords through you, and could you honestly say they were not justified in doing so?
+
+We have become a society of proud victims. The highest value in our inverted world is not to offend. The highest achievement to extract power and resources from better men by being a victim. Not to struggle, build, persevere and create something for you and for others. The modern slave does not strive to rise from under the yoke, but he uses the collective weight of the masses to pull everyone down to his level, so that others will not see how utterly useless he is. Does that make you proud? Does that give you a feeling of satisfaction? Is that all you are capable of? Why were those men on those beaches able to face the machine guns and climb up that cliff, but you can’t face disagreement or climb up off your own ass? Does it make you feel like you are entitled to something just because you belong to a victim class of your own choosing?
+
+Why would you want to be a victim? Why would you even strive to be equal? Why would you not want to be better? Diversity, tolerance, equality, those are all creeds of slaves. Weak men, who lack the imagination to become something, and the courage to make it happen. Let these worthless squirming victims be victims, and become gods. For gods is what you will be, when you renounce their slave morality, find your will to power, refuse to give them anything and become their masters. You are the descendants of great European men. Protectors, conquerors, explorers, inventors – men who built this world. Act like one and eventually deserve your place on the Elysian Fields by their side. Standing proud for what you accomplished, not what you happened to be.
+
+
+
+Slave Morality
+
+
+Once proud sons of once proud nations reduced to disciples of the lie
+From Pretorian guards and the three hundred to a frail victim class
+Across the churning Styx those who bled for you curse their progeny
+Elysian Fields grow barren as the men grow weak
+
+Behold the death of vitality
+Reign of king slave morality
+
+False prophets, desecration of power
+Diversity, tolerance, creed of the weak
+The truth will be revealed
+The traitor’s fate is sealed
+
+Devoured by wolves, inferiors plead for equality
+Titans have fallen, Olympians rise to end conformity
+Failure reassigned, scapegoats lynched, ressentiment the guiding light
+Daughter of Agenon, find your will to power, brothers of Minos, fight
+
+Behold the death of vitality
+Reign of king slave morality
+
+False prophets, desecration of power
+Diversity, tolerance, creed of the weak
+The truth will be revealed
+The traitor’s fate is sealed
+
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+
+</msg>
+<status status="PASS" starttime="20210930 14:31:34.228" endtime="20210930 14:31:34.228"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:31:34.232" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activePage": "page=026873a9-c270-4054-b2c7-91ff66d2281f", "pages": [{"type": "page", "title": "Slave Morality", "url": "http://dystocracy.com/slave-morality-2/", "id": "page=026873a9-c270-4054-b2c7-91ff66d2281f", "timestamp": 1633001490.937}]}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:31:34.233" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:31:34.234" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:31:34.234" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:31:34.236" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:31:34.240" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:31:34.228" endtime="20210930 14:31:34.240"/>
+</kw>
+<status status="PASS" starttime="20210930 14:31:26.016" endtime="20210930 14:31:34.240"/>
+</iter>
+<iter>
+<var name="${browser}">webkit</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:31:34.241" level="INFO">{"browser": "webkit", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\23ef20ce-966a-41f2-88ca-405f8420d4d0"}</msg>
+<msg timestamp="20210930 14:31:37.621" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\23ef20ce-966a-41f2-88ca-405f8420d4d0"}</msg>
+<status status="PASS" starttime="20210930 14:31:34.240" endtime="20210930 14:31:37.622"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:31:43.005" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:31:43.005" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:31:37.622" endtime="20210930 14:31:43.005"/>
+</kw>
+<kw name="Get Page Ids" library="Browser">
+<var>${ids}</var>
+<arg>ACTIVE</arg>
+<arg>ACTIVE</arg>
+<arg>ACTIVE</arg>
+<tag>BrowserControl</tag>
+<tag>Getter</tag>
+<doc>Returns a list of page ids based on the context and browser selection.
+See `Browser, Context and Page` for more information about Page and related concepts.</doc>
+<msg timestamp="20210930 14:31:43.100" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activePage": "page=437eb095-436e-4f49-8ade-0991711ff6f0", "pages": [{"type": "page", "title": "Fuck democracy, this is dystocracy", "url": "http://dystocracy.com/", "id": "page=437eb095-436e-4f49-8ade-0991711ff6f0", "timestamp": 1633001501.754}]}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:31:43.100" level="INFO">${ids} = ['page=437eb095-436e-4f49-8ade-0991711ff6f0']</msg>
+<status status="PASS" starttime="20210930 14:31:43.005" endtime="20210930 14:31:43.100"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${ids}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:31:43.100" level="INFO">['page=437eb095-436e-4f49-8ade-0991711ff6f0']</msg>
+<status status="PASS" starttime="20210930 14:31:43.100" endtime="20210930 14:31:43.100"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:43.100" endtime="20210930 14:31:43.511"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=menu-item-97</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:31:43.511" endtime="20210930 14:31:43.714"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:43.714" endtime="20210930 14:31:43.716"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=menu-item-157</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:31:43.716" endtime="20210930 14:31:44.498"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:44.498" endtime="20210930 14:31:45.114"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=post-146</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:31:45.147" level="INFO">${text} = Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their f...</msg>
+<status status="PASS" starttime="20210930 14:31:45.114" endtime="20210930 14:31:45.147"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:31:45.148" level="INFO">Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their fate. I see small nation states repel empires. I see Europe stand up against the marauding hordes that raped and pillaged her for hundreds of years and say: No more! I see white headstones as far as the eye can see on those cliffs in Normandy. Headstones of men who did not want to go, but went anyway, because they knew it had to be done and they were the ones who had to do it. I see proud men who took a stand to protect what was theirs, and who paid the ultimate price, but did so willingly – gleefully even – knowing that the price was worth it because of who and what they paid it for, and that they would be remembered. I see heroes.
+
+And then I see you. And I see how you have failed them. What do you think the men who came before you would say to you if you were to cross the darkest water now and face them? Would they laugh at your weakness? Or would they cry if they saw all their sacrifices over centuries and generations being betrayed by you? How you willingly surrendered to those same hordes they protected their homes, their women and children from. How you sold the freedoms and independence they fought for to faceless centralised governments for a little personal gain? Would they drive their swords through you, and could you honestly say they were not justified in doing so?
+
+We have become a society of proud victims. The highest value in our inverted world is not to offend. The highest achievement to extract power and resources from better men by being a victim. Not to struggle, build, persevere and create something for you and for others. The modern slave does not strive to rise from under the yoke, but he uses the collective weight of the masses to pull everyone down to his level, so that others will not see how utterly useless he is. Does that make you proud? Does that give you a feeling of satisfaction? Is that all you are capable of? Why were those men on those beaches able to face the machine guns and climb up that cliff, but you can’t face disagreement or climb up off your own ass? Does it make you feel like you are entitled to something just because you belong to a victim class of your own choosing?
+
+Why would you want to be a victim? Why would you even strive to be equal? Why would you not want to be better? Diversity, tolerance, equality, those are all creeds of slaves. Weak men, who lack the imagination to become something, and the courage to make it happen. Let these worthless squirming victims be victims, and become gods. For gods is what you will be, when you renounce their slave morality, find your will to power, refuse to give them anything and become their masters. You are the descendants of great European men. Protectors, conquerors, explorers, inventors – men who built this world. Act like one and eventually deserve your place on the Elysian Fields by their side. Standing proud for what you accomplished, not what you happened to be.
+
+
+Slave Morality
+
+Once proud sons of once proud nations reduced to disciples of the lie
+From Pretorian guards and the three hundred to a frail victim class
+Across the churning Styx those who bled for you curse their progeny
+Elysian Fields grow barren as the men grow weak
+
+Behold the death of vitality
+Reign of king slave morality
+
+False prophets, desecration of power
+Diversity, tolerance, creed of the weak
+The truth will be revealed
+The traitor’s fate is sealed
+
+Devoured by wolves, inferiors plead for equality
+Titans have fallen, Olympians rise to end conformity
+Failure reassigned, scapegoats lynched, ressentiment the guiding light
+Daughter of Agenon, find your will to power, brothers of Minos, fight
+
+Behold the death of vitality
+Reign of king slave morality
+
+False prophets, desecration of power
+Diversity, tolerance, creed of the weak
+The truth will be revealed
+The traitor’s fate is sealed
+
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+Men are rewarded by miserable fates in the morality of the slaves
+
+
+</msg>
+<status status="PASS" starttime="20210930 14:31:45.148" endtime="20210930 14:31:45.148"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:31:45.151" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activePage": "page=437eb095-436e-4f49-8ade-0991711ff6f0", "pages": [{"type": "page", "title": "Slave Morality", "url": "http://dystocracy.com/slave-morality-2/", "id": "page=437eb095-436e-4f49-8ade-0991711ff6f0", "timestamp": 1633001501.754}]}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:31:45.151" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:31:45.152" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:31:45.153" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:31:45.154" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:31:45.164" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:31:45.148" endtime="20210930 14:31:45.164"/>
+</kw>
+<status status="PASS" starttime="20210930 14:31:34.240" endtime="20210930 14:31:45.164"/>
+</iter>
+<status status="PASS" starttime="20210930 14:31:21.507" endtime="20210930 14:31:45.164"/>
+</for>
+<doc>Read page ids and a certain text with all browsers.</doc>
+<status status="PASS" starttime="20210930 14:31:21.504" endtime="20210930 14:31:45.164"/>
+</test>
+<test id="s1-t2" name="Open Facebook">
+<for flavor="IN">
+<var>${browser}</var>
+<value>@{browsers}</value>
+<iter>
+<var name="${browser}">chromium</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:31:45.175" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\323ef23d-2554-4fc5-860b-c3927c5be7ba"}</msg>
+<msg timestamp="20210930 14:31:45.663" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\323ef23d-2554-4fc5-860b-c3927c5be7ba"}</msg>
+<status status="PASS" starttime="20210930 14:31:45.174" endtime="20210930 14:31:45.663"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:31:47.005" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:31:47.005" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:31:45.664" endtime="20210930 14:31:47.006"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Facebook"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:31:47.032" level="INFO">${elements} = ['element=09743dee-639e-4458-bb9b-c5c6d26f46ad', 'element=0b05f302-05e2-4a6a-93a4-c39c3bf8aee1']</msg>
+<status status="PASS" starttime="20210930 14:31:47.006" endtime="20210930 14:31:47.032"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:47.032" endtime="20210930 14:31:47.523"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:31:47.523" endtime="20210930 14:31:48.896"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:48.897" endtime="20210930 14:31:50.509"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=seo_h1_tag</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:31:50.552" level="INFO">${text} = Dystocracy</msg>
+<status status="PASS" starttime="20210930 14:31:50.509" endtime="20210930 14:31:50.552"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:31:50.552" level="INFO">Dystocracy</msg>
+<status status="PASS" starttime="20210930 14:31:50.552" endtime="20210930 14:31:50.552"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:31:50.555" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activePage": "page=60e1075b-0361-490e-8183-cee9c3139fcb", "pages": [{"type": "page", "title": "Dystocracy - Etusivu | Facebook", "url": "https://www.facebook.com/dystocracy", "id": "page=60e1075b-0361-490e-8183-cee9c3139fcb", "timestamp": 1633001505.822}]}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:31:50.556" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:31:50.557" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:31:50.557" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:31:50.560" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:31:50.576" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:31:50.552" endtime="20210930 14:31:50.577"/>
+</kw>
+<status status="PASS" starttime="20210930 14:31:45.173" endtime="20210930 14:31:50.577"/>
+</iter>
+<iter>
+<var name="${browser}">firefox</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:31:50.578" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\55537e22-9a19-4a56-9730-ceed341dbbc2"}</msg>
+<msg timestamp="20210930 14:31:52.066" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\55537e22-9a19-4a56-9730-ceed341dbbc2"}</msg>
+<status status="PASS" starttime="20210930 14:31:50.577" endtime="20210930 14:31:52.067"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:31:53.938" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:31:53.939" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:31:52.067" endtime="20210930 14:31:53.939"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Facebook"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:31:53.984" level="INFO">${elements} = ['element=3a5a9560-d7fc-4f5b-a74a-2b65d6507636', 'element=ed02b835-3fee-444c-b4bb-3d6f6074f730']</msg>
+<status status="PASS" starttime="20210930 14:31:53.939" endtime="20210930 14:31:53.984"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:53.984" endtime="20210930 14:31:54.447"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:31:54.448" endtime="20210930 14:31:57.506"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:31:57.506" endtime="20210930 14:31:59.216"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=seo_h1_tag</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:31:59.265" level="INFO">${text} = Dystocracy</msg>
+<status status="PASS" starttime="20210930 14:31:59.216" endtime="20210930 14:31:59.265"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:31:59.265" level="INFO">Dystocracy</msg>
+<status status="PASS" starttime="20210930 14:31:59.265" endtime="20210930 14:31:59.265"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:31:59.268" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "pages": []}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": false}, {"type": "firefox", "id": "browser=efe32b03-6479-4b9c-8580-f7755b9dc7b1", "contexts": [{"type": "context", "id": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activePage": "page=a16720d2-0c72-444a-b3b0-6d92d9f86457", "pages": [{"type": "page", "title": "Dystocracy - Etusivu | Facebook", "url": "https://www.facebook.com/dystocracy", "id": "page=a16720d2-0c72-444a-b3b0-6d92d9f86457", "timestamp": 1633001512.763}]}], "activeContext": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:31:59.269" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:31:59.270" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:31:59.270" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:31:59.272" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:31:59.276" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:31:59.265" endtime="20210930 14:31:59.277"/>
+</kw>
+<status status="PASS" starttime="20210930 14:31:50.577" endtime="20210930 14:31:59.277"/>
+</iter>
+<iter>
+<var name="${browser}">webkit</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:31:59.277" level="INFO">{"browser": "webkit", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\a12a5d48-3c07-4af8-ac86-b3e5e11be1dd"}</msg>
+<msg timestamp="20210930 14:31:59.783" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\a12a5d48-3c07-4af8-ac86-b3e5e11be1dd"}</msg>
+<status status="PASS" starttime="20210930 14:31:59.277" endtime="20210930 14:31:59.783"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:32:01.215" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:32:01.215" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:31:59.783" endtime="20210930 14:32:01.215"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Facebook"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:32:01.334" level="INFO">${elements} = ['element=13492d2e-b60f-4fd5-a773-785f8c0411da', 'element=41f8b0bc-f97e-414b-b90f-1781171205b5']</msg>
+<status status="PASS" starttime="20210930 14:32:01.215" endtime="20210930 14:32:01.334"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:01.334" endtime="20210930 14:32:01.718"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:01.718" endtime="20210930 14:32:02.898"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:02.899" endtime="20210930 14:32:05.449"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=seo_h1_tag</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:32:05.472" level="INFO">${text} = Dystocracy</msg>
+<status status="PASS" starttime="20210930 14:32:05.449" endtime="20210930 14:32:05.472"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:32:05.472" level="INFO">Dystocracy</msg>
+<status status="PASS" starttime="20210930 14:32:05.472" endtime="20210930 14:32:05.472"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:32:05.475" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "pages": []}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": false}, {"type": "firefox", "id": "browser=efe32b03-6479-4b9c-8580-f7755b9dc7b1", "contexts": [{"type": "context", "id": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "pages": []}], "activeContext": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activeBrowser": false}, {"type": "webkit", "id": "browser=8a49663b-659b-40e3-8ba6-e9e52eedc0f2", "contexts": [{"type": "context", "id": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "activePage": "page=b773fe7e-b851-4280-bf9d-e482f23ef51f", "pages": [{"type": "page", "title": "Dystocracy - Etusivu | Facebook", "url": "https://www.facebook.com/dystocracy", "id": "page=b773fe7e-b851-4280-bf9d-e482f23ef51f", "timestamp": 1633001519.926}]}], "activeContext": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:32:05.477" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:32:05.477" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:32:05.477" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:32:05.479" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:32:05.484" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:32:05.473" endtime="20210930 14:32:05.484"/>
+</kw>
+<status status="PASS" starttime="20210930 14:31:59.277" endtime="20210930 14:32:05.484"/>
+</iter>
+<status status="PASS" starttime="20210930 14:31:45.173" endtime="20210930 14:32:05.484"/>
+</for>
+<doc>Opens Facebook page from a link with all browsers.</doc>
+<status status="PASS" starttime="20210930 14:31:45.172" endtime="20210930 14:32:05.485"/>
+</test>
+<test id="s1-t3" name="Open Twitter">
+<for flavor="IN">
+<var>${browser}</var>
+<value>@{browsers}</value>
+<iter>
+<var name="${browser}">chromium</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:32:05.494" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\b37200e2-fb6c-4bd5-8d2f-6a40ab16449c"}</msg>
+<msg timestamp="20210930 14:32:05.911" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\b37200e2-fb6c-4bd5-8d2f-6a40ab16449c"}</msg>
+<status status="PASS" starttime="20210930 14:32:05.493" endtime="20210930 14:32:05.911"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:32:07.316" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:32:07.316" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:32:05.911" endtime="20210930 14:32:07.316"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:07.316" endtime="20210930 14:32:07.833"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Twitter"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:32:07.865" level="INFO">${elements} = ['element=2f47afa3-419b-4742-8bca-d304824a3997', 'element=fe474d94-9221-4d52-acd8-145802dd982f']</msg>
+<status status="PASS" starttime="20210930 14:32:07.833" endtime="20210930 14:32:07.865"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:07.865" endtime="20210930 14:32:08.147"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:08.147" endtime="20210930 14:32:10.799"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Get Text</arg>
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Get Text" library="Browser">
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:10.799" endtime="20210930 14:32:10.822"/>
+</kw>
+<msg timestamp="20210930 14:32:10.822" level="INFO">${status} = True</msg>
+<status status="PASS" starttime="20210930 14:32:10.799" endtime="20210930 14:32:10.822"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>not ${status}</arg>
+<arg>Click</arg>
+<arg>${elements}[0]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20210930 14:32:10.822" endtime="20210930 14:32:10.822"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:32:10.834" level="INFO">${text} = 2,396 Followers</msg>
+<status status="PASS" starttime="20210930 14:32:10.822" endtime="20210930 14:32:10.834"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:32:10.834" level="INFO">2,396 Followers</msg>
+<status status="PASS" starttime="20210930 14:32:10.834" endtime="20210930 14:32:10.834"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:32:10.837" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "pages": []}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": false}, {"type": "firefox", "id": "browser=efe32b03-6479-4b9c-8580-f7755b9dc7b1", "contexts": [{"type": "context", "id": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "pages": []}], "activeContext": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activeBrowser": false}, {"type": "webkit", "id": "browser=8a49663b-659b-40e3-8ba6-e9e52eedc0f2", "contexts": [{"type": "context", "id": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "pages": []}], "activeContext": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "activeBrowser": false}, {"type": "chromium", "id": "browser=c03f1972-d602-4b73-8396-2934bc9a8a1f", "contexts": [{"type": "context", "id": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "activePage": "page=1d4d53b5-989d-4cc5-9907-2b97f0d1aabb", "pages": [{"type": "page", "title": "Dystocracy (@Dystocracycrew) / Twitter", "url": "https://twitter.com/Dystocracycrew", "id": "page=1d4d53b5-989d-4cc5-9907-2b97f0d1aabb", "timestamp": 1633001526.062}]}], "activeContext": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:32:10.837" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:32:10.838" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:32:10.838" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:32:10.841" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:32:10.857" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:32:10.834" endtime="20210930 14:32:10.857"/>
+</kw>
+<status status="PASS" starttime="20210930 14:32:05.493" endtime="20210930 14:32:10.857"/>
+</iter>
+<iter>
+<var name="${browser}">firefox</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:32:10.858" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\876829af-0b12-4cc3-94a7-6538a72030cf"}</msg>
+<msg timestamp="20210930 14:32:12.582" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\876829af-0b12-4cc3-94a7-6538a72030cf"}</msg>
+<status status="PASS" starttime="20210930 14:32:10.858" endtime="20210930 14:32:12.583"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:32:14.536" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:32:14.536" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:32:12.583" endtime="20210930 14:32:14.536"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:14.536" endtime="20210930 14:32:15.040"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Twitter"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:32:15.091" level="INFO">${elements} = ['element=8ddaf658-931d-4f64-b746-1ca0e451e8dd', 'element=c4c446e3-726f-4d5b-bbba-6499fce1c79b']</msg>
+<status status="PASS" starttime="20210930 14:32:15.040" endtime="20210930 14:32:15.091"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:15.091" endtime="20210930 14:32:15.479"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:15.479" endtime="20210930 14:32:18.615"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Get Text</arg>
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Get Text" library="Browser">
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:18.616" endtime="20210930 14:32:18.656"/>
+</kw>
+<msg timestamp="20210930 14:32:18.656" level="INFO">${status} = True</msg>
+<status status="PASS" starttime="20210930 14:32:18.615" endtime="20210930 14:32:18.656"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>not ${status}</arg>
+<arg>Click</arg>
+<arg>${elements}[0]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20210930 14:32:18.656" endtime="20210930 14:32:18.656"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:32:18.673" level="INFO">${text} = 2,396 Followers</msg>
+<status status="PASS" starttime="20210930 14:32:18.656" endtime="20210930 14:32:18.673"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:32:18.673" level="INFO">2,396 Followers</msg>
+<status status="PASS" starttime="20210930 14:32:18.673" endtime="20210930 14:32:18.673"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:32:18.676" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "pages": []}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": false}, {"type": "firefox", "id": "browser=efe32b03-6479-4b9c-8580-f7755b9dc7b1", "contexts": [{"type": "context", "id": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "pages": []}], "activeContext": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activeBrowser": false}, {"type": "webkit", "id": "browser=8a49663b-659b-40e3-8ba6-e9e52eedc0f2", "contexts": [{"type": "context", "id": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "pages": []}], "activeContext": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "activeBrowser": false}, {"type": "chromium", "id": "browser=c03f1972-d602-4b73-8396-2934bc9a8a1f", "contexts": [{"type": "context", "id": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "pages": []}], "activeContext": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "activeBrowser": false}, {"type": "firefox", "id": "browser=69401ad1-4059-49da-999f-a423a17a58b7", "contexts": [{"type": "context", "id": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "activePage": "page=3db62f16-9918-4d78-97fe-8c31d3c8136e", "pages": [{"type": "page", "title": "Dystocracy (@Dystocracycrew) / Twitter", "url": "https://twitter.com/Dystocracycrew", "id": "page=3db62f16-9918-4d78-97fe-8c31d3c8136e", "timestamp": 1633001533.212}]}], "activeContext": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:32:18.677" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:32:18.678" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:32:18.679" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:32:18.680" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:32:18.684" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:32:18.673" endtime="20210930 14:32:18.684"/>
+</kw>
+<status status="PASS" starttime="20210930 14:32:10.858" endtime="20210930 14:32:18.684"/>
+</iter>
+<iter>
+<var name="${browser}">webkit</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:32:18.685" level="INFO">{"browser": "webkit", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\ba261053-c1a9-43b5-a662-bb32f91d13b7"}</msg>
+<msg timestamp="20210930 14:32:19.225" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\ba261053-c1a9-43b5-a662-bb32f91d13b7"}</msg>
+<status status="PASS" starttime="20210930 14:32:18.685" endtime="20210930 14:32:19.226"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:32:20.872" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:32:20.872" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:32:19.226" endtime="20210930 14:32:20.872"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:20.872" endtime="20210930 14:32:21.380"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Twitter"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:32:21.413" level="INFO">${elements} = ['element=587c7c74-a42a-4782-bae1-1da4a73efa6e', 'element=11bfa722-9964-4baf-a1bc-c4135e876b2b']</msg>
+<status status="PASS" starttime="20210930 14:32:21.380" endtime="20210930 14:32:21.413"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:21.413" endtime="20210930 14:32:21.838"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:21.838" endtime="20210930 14:32:21.839"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Get Text</arg>
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Get Text" library="Browser">
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:32:31.938" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20210930 14:32:31.941" level="FAIL">TimeoutError: page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//*[@href="/Dystocracycrew/followers"]"
+============================================================</msg>
+<status status="FAIL" starttime="20210930 14:32:21.839" endtime="20210930 14:32:31.941"/>
+</kw>
+<msg timestamp="20210930 14:32:31.941" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20210930 14:32:21.839" endtime="20210930 14:32:31.941"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>not ${status}</arg>
+<arg>Click</arg>
+<arg>${elements}[0]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:31.941" endtime="20210930 14:32:32.425"/>
+</kw>
+<status status="PASS" starttime="20210930 14:32:31.941" endtime="20210930 14:32:32.425"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>//*[@href="/Dystocracycrew/followers"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:32:33.993" level="INFO">${text} = 2,396 Followers</msg>
+<status status="PASS" starttime="20210930 14:32:32.425" endtime="20210930 14:32:33.993"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:32:33.993" level="INFO">2,396 Followers</msg>
+<status status="PASS" starttime="20210930 14:32:33.993" endtime="20210930 14:32:33.993"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:32:33.996" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "pages": []}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": false}, {"type": "firefox", "id": "browser=efe32b03-6479-4b9c-8580-f7755b9dc7b1", "contexts": [{"type": "context", "id": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "pages": []}], "activeContext": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activeBrowser": false}, {"type": "webkit", "id": "browser=8a49663b-659b-40e3-8ba6-e9e52eedc0f2", "contexts": [{"type": "context", "id": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "pages": []}], "activeContext": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "activeBrowser": false}, {"type": "chromium", "id": "browser=c03f1972-d602-4b73-8396-2934bc9a8a1f", "contexts": [{"type": "context", "id": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "pages": []}], "activeContext": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "activeBrowser": false}, {"type": "firefox", "id": "browser=69401ad1-4059-49da-999f-a423a17a58b7", "contexts": [{"type": "context", "id": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "pages": []}], "activeContext": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "activeBrowser": false}, {"type": "webkit", "id": "browser=59c49e5e-8a2c-4d1b-9fa9-de7c946222b6", "contexts": [{"type": "context", "id": "context=3ec0d141-dc85-408c-a676-8e30ae133245", "activePage": "page=98b5a15c-4970-4adb-89bf-3749669f66ec", "pages": [{"type": "page", "title": "Dystocracy (@Dystocracycrew) / Twitter", "url": "https://twitter.com/Dystocracycrew", "id": "page=98b5a15c-4970-4adb-89bf-3749669f66ec", "timestamp": 1633001539.377}]}], "activeContext": "context=3ec0d141-dc85-408c-a676-8e30ae133245", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:32:33.997" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:32:33.998" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:32:33.999" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:32:34.001" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:32:34.010" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:32:33.993" endtime="20210930 14:32:34.010"/>
+</kw>
+<status status="PASS" starttime="20210930 14:32:18.684" endtime="20210930 14:32:34.010"/>
+</iter>
+<status status="PASS" starttime="20210930 14:32:05.493" endtime="20210930 14:32:34.010"/>
+</for>
+<doc>Opens Twitter page from a link with all browsers.</doc>
+<status status="PASS" starttime="20210930 14:32:05.490" endtime="20210930 14:32:34.011"/>
+</test>
+<test id="s1-t4" name="Open Youtube">
+<for flavor="IN">
+<var>${browser}</var>
+<value>@{browsers}</value>
+<iter>
+<var name="${browser}">chromium</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:32:34.021" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\341753cd-90b6-4f2d-b9aa-b37d9548e258"}</msg>
+<msg timestamp="20210930 14:32:34.681" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\341753cd-90b6-4f2d-b9aa-b37d9548e258"}</msg>
+<status status="PASS" starttime="20210930 14:32:34.020" endtime="20210930 14:32:34.681"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:32:36.360" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:32:36.360" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:32:34.681" endtime="20210930 14:32:36.360"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:36.360" endtime="20210930 14:32:36.884"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Youtube"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:32:36.905" level="INFO">${elements} = ['element=f1a59dfd-ea70-4b90-bf3d-11f71183d749', 'element=2172c785-f308-48d4-8dee-b4db13319c32']</msg>
+<status status="PASS" starttime="20210930 14:32:36.884" endtime="20210930 14:32:36.905"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:36.905" endtime="20210930 14:32:37.172"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:37.172" endtime="20210930 14:32:37.949"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click</arg>
+<arg>//*[@aria-label="Agree to the use of cookies and other data for the purposes described"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click" library="Browser">
+<arg>//*[@aria-label="Agree to the use of cookies and other data for the purposes described"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:37.950" endtime="20210930 14:32:38.382"/>
+</kw>
+<status status="PASS" starttime="20210930 14:32:37.949" endtime="20210930 14:32:38.383"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:38.383" endtime="20210930 14:32:39.175"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=subscriber-count</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:32:39.687" level="INFO">${text} = 25 subscribers</msg>
+<status status="PASS" starttime="20210930 14:32:39.175" endtime="20210930 14:32:39.687"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:32:39.689" level="INFO">25 subscribers</msg>
+<status status="PASS" starttime="20210930 14:32:39.689" endtime="20210930 14:32:39.689"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//*[@title="DYSTOCRACY - Slave Morality (Studio Lyric Video)"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:32:39.689" endtime="20210930 14:32:39.973"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:32:39.973" endtime="20210930 14:32:40.443"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210930 14:33:10.451" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20210930 14:32:40.443" endtime="20210930 14:33:10.451"/>
+</kw>
+<kw name="Keyboard Key" library="Browser">
+<arg>press</arg>
+<arg>Backspace</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" starttime="20210930 14:33:10.451" endtime="20210930 14:33:10.465"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210930 14:33:12.471" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210930 14:33:10.465" endtime="20210930 14:33:12.471"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:33:12.476" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "pages": []}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": false}, {"type": "firefox", "id": "browser=efe32b03-6479-4b9c-8580-f7755b9dc7b1", "contexts": [{"type": "context", "id": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "pages": []}], "activeContext": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activeBrowser": false}, {"type": "webkit", "id": "browser=8a49663b-659b-40e3-8ba6-e9e52eedc0f2", "contexts": [{"type": "context", "id": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "pages": []}], "activeContext": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "activeBrowser": false}, {"type": "chromium", "id": "browser=c03f1972-d602-4b73-8396-2934bc9a8a1f", "contexts": [{"type": "context", "id": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "pages": []}], "activeContext": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "activeBrowser": false}, {"type": "firefox", "id": "browser=69401ad1-4059-49da-999f-a423a17a58b7", "contexts": [{"type": "context", "id": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "pages": []}], "activeContext": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "activeBrowser": false}, {"type": "webkit", "id": "browser=59c49e5e-8a2c-4d1b-9fa9-de7c946222b6", "contexts": [{"type": "context", "id": "context=3ec0d141-dc85-408c-a676-8e30ae133245", "pages": []}], "activeContext": "context=3ec0d141-dc85-408c-a676-8e30ae133245", "activeBrowser": false}, {"type": "chromium", "id": "browser=39599ee6-fec7-445f-9f04-5321ce55ec10", "contexts": [{"type": "context", "id": "context=921da65f-a024-41d0-8797-ae57068cb69a", "activePage": "page=99d4d3dd-c626-4b5e-9ab0-0919980c88f4", "pages": [{"type": "page", "title": "DYSTOCRACY - Slave Morality (Studio Lyric Video) - YouTube", "url": "https://www.youtube.com/watch?v=lF8zUVTTAU4", "id": "page=99d4d3dd-c626-4b5e-9ab0-0919980c88f4", "timestamp": 1633001554.847}]}], "activeContext": "context=921da65f-a024-41d0-8797-ae57068cb69a", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:33:12.477" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:33:12.479" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:33:12.481" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:33:12.485" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:33:12.515" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:33:12.471" endtime="20210930 14:33:12.515"/>
+</kw>
+<status status="PASS" starttime="20210930 14:32:34.020" endtime="20210930 14:33:12.515"/>
+</iter>
+<iter>
+<var name="${browser}">firefox</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:33:12.516" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\cd63a973-1128-4a01-9132-cdf92ca65810"}</msg>
+<msg timestamp="20210930 14:33:14.215" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\cd63a973-1128-4a01-9132-cdf92ca65810"}</msg>
+<status status="PASS" starttime="20210930 14:33:12.516" endtime="20210930 14:33:14.215"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:33:15.953" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:33:15.953" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:33:14.215" endtime="20210930 14:33:15.954"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:33:15.954" endtime="20210930 14:33:16.463"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Youtube"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:33:16.505" level="INFO">${elements} = ['element=f4301866-f2b2-4b4c-8e1b-ffae6e57dea6', 'element=4508d509-3f65-4088-ad6a-9ee02fa6109b']</msg>
+<status status="PASS" starttime="20210930 14:33:16.463" endtime="20210930 14:33:16.505"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:33:16.505" endtime="20210930 14:33:16.838"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:33:16.838" endtime="20210930 14:33:17.710"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click</arg>
+<arg>//*[@aria-label="Agree to the use of cookies and other data for the purposes described"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click" library="Browser">
+<arg>//*[@aria-label="Agree to the use of cookies and other data for the purposes described"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:33:17.710" endtime="20210930 14:33:18.163"/>
+</kw>
+<status status="PASS" starttime="20210930 14:33:17.710" endtime="20210930 14:33:18.163"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:33:18.163" endtime="20210930 14:33:18.959"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=subscriber-count</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:33:19.656" level="INFO">${text} = 25 subscribers</msg>
+<status status="PASS" starttime="20210930 14:33:18.959" endtime="20210930 14:33:19.656"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:33:19.657" level="INFO">25 subscribers</msg>
+<status status="PASS" starttime="20210930 14:33:19.657" endtime="20210930 14:33:19.657"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//*[@title="DYSTOCRACY - Slave Morality (Studio Lyric Video)"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:33:19.657" endtime="20210930 14:33:19.795"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:33:19.795" endtime="20210930 14:33:19.796"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210930 14:33:49.802" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20210930 14:33:19.797" endtime="20210930 14:33:49.802"/>
+</kw>
+<kw name="Keyboard Key" library="Browser">
+<arg>press</arg>
+<arg>Backspace</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" starttime="20210930 14:33:49.802" endtime="20210930 14:33:49.817"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210930 14:33:51.825" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210930 14:33:49.817" endtime="20210930 14:33:51.825"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:33:51.831" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "pages": []}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": false}, {"type": "firefox", "id": "browser=efe32b03-6479-4b9c-8580-f7755b9dc7b1", "contexts": [{"type": "context", "id": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "pages": []}], "activeContext": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activeBrowser": false}, {"type": "webkit", "id": "browser=8a49663b-659b-40e3-8ba6-e9e52eedc0f2", "contexts": [{"type": "context", "id": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "pages": []}], "activeContext": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "activeBrowser": false}, {"type": "chromium", "id": "browser=c03f1972-d602-4b73-8396-2934bc9a8a1f", "contexts": [{"type": "context", "id": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "pages": []}], "activeContext": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "activeBrowser": false}, {"type": "firefox", "id": "browser=69401ad1-4059-49da-999f-a423a17a58b7", "contexts": [{"type": "context", "id": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "pages": []}], "activeContext": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "activeBrowser": false}, {"type": "webkit", "id": "browser=59c49e5e-8a2c-4d1b-9fa9-de7c946222b6", "contexts": [{"type": "context", "id": "context=3ec0d141-dc85-408c-a676-8e30ae133245", "pages": []}], "activeContext": "context=3ec0d141-dc85-408c-a676-8e30ae133245", "activeBrowser": false}, {"type": "chromium", "id": "browser=39599ee6-fec7-445f-9f04-5321ce55ec10", "contexts": [{"type": "context", "id": "context=921da65f-a024-41d0-8797-ae57068cb69a", "pages": []}], "activeContext": "context=921da65f-a024-41d0-8797-ae57068cb69a", "activeBrowser": false}, {"type": "firefox", "id": "browser=0e4b2937-3ae0-4498-9352-d855ed182c45", "contexts": [{"type": "context", "id": "context=f917e07e-8688-423e-a52a-6265956e689e", "activePage": "page=dda16523-f9d7-4823-b342-401000d9278d", "pages": [{"type": "page", "title": "DYSTOCRACY - Slave Morality (Studio Lyric Video) - YouTube", "url": "https://www.youtube.com/watch?v=lF8zUVTTAU4", "id": "page=dda16523-f9d7-4823-b342-401000d9278d", "timestamp": 1633001594.892}]}], "activeContext": "context=f917e07e-8688-423e-a52a-6265956e689e", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:33:51.833" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:33:51.834" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:33:51.834" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:33:51.836" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:33:51.844" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:33:51.825" endtime="20210930 14:33:51.844"/>
+</kw>
+<status status="PASS" starttime="20210930 14:33:12.515" endtime="20210930 14:33:51.844"/>
+</iter>
+<iter>
+<var name="${browser}">webkit</var>
+<kw name="New Browser" library="Browser">
+<arg>${browser}</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20210930 14:33:51.846" level="INFO">{"browser": "webkit", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\08d3219e-f7e7-4872-b2b1-0b75ab7d5028"}</msg>
+<msg timestamp="20210930 14:33:52.342" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Users\\valtteri.heiskanen\\PycharmProjects\\BrowserDemo\\browser\\traces\\08d3219e-f7e7-4872-b2b1-0b75ab7d5028"}</msg>
+<status status="PASS" starttime="20210930 14:33:51.845" endtime="20210930 14:33:52.342"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210930 14:33:53.814" level="INFO">Successfully initialized new page object and opened url: http://dystocracy.com/</msg>
+<msg timestamp="20210930 14:33:53.814" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210930 14:33:52.342" endtime="20210930 14:33:53.814"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:33:53.815" endtime="20210930 14:33:54.320"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${elements}</var>
+<arg>//*[@title="Youtube"]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to playwright element handle for all matched elements by ``selector``.</doc>
+<msg timestamp="20210930 14:33:54.363" level="INFO">${elements} = ['element=044766a2-a3f0-49d1-a0b7-5f7fac9686f6', 'element=ec0bdaab-34aa-4308-b249-5ba9ac47912e']</msg>
+<status status="PASS" starttime="20210930 14:33:54.321" endtime="20210930 14:33:54.363"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${elements}[0]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:33:54.363" endtime="20210930 14:33:54.760"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:33:54.761" endtime="20210930 14:33:55.898"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click</arg>
+<arg>//*[@aria-label="Agree to the use of cookies and other data for the purposes described"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click" library="Browser">
+<arg>//*[@aria-label="Agree to the use of cookies and other data for the purposes described"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:33:55.898" endtime="20210930 14:33:56.567"/>
+</kw>
+<status status="PASS" starttime="20210930 14:33:55.898" endtime="20210930 14:33:56.567"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:33:56.567" endtime="20210930 14:33:59.280"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${text}</var>
+<arg>id=subscriber-count</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210930 14:33:59.312" level="INFO">${text} = 25 subscribers</msg>
+<status status="PASS" starttime="20210930 14:33:59.280" endtime="20210930 14:33:59.312"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210930 14:33:59.312" level="INFO">25 subscribers</msg>
+<status status="PASS" starttime="20210930 14:33:59.312" endtime="20210930 14:33:59.312"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//*[@title="DYSTOCRACY - Slave Morality (Studio Lyric Video)"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210930 14:33:59.312" endtime="20210930 14:33:59.546"/>
+</kw>
+<kw name="Wait Until Network Is Idle" library="Browser">
+<arg>timeout=${timeout}</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until there has been at least one instance of 500 ms of no network traffic on the page after loading.</doc>
+<status status="PASS" starttime="20210930 14:33:59.546" endtime="20210930 14:34:00.036"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210930 14:34:30.041" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20210930 14:34:00.036" endtime="20210930 14:34:30.041"/>
+</kw>
+<kw name="Keyboard Key" library="Browser">
+<arg>press</arg>
+<arg>Backspace</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" starttime="20210930 14:34:30.041" endtime="20210930 14:34:30.396"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210930 14:34:32.398" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210930 14:34:30.396" endtime="20210930 14:34:32.398"/>
+</kw>
+<kw name="Close Page" library="Browser">
+<arg>CURRENT</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<msg timestamp="20210930 14:34:32.402" level="INFO">[{"type": "chromium", "id": "browser=4e181d86-c87e-4c8c-8c05-a412766f3016", "contexts": [{"type": "context", "id": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "pages": []}], "activeContext": "context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75", "activeBrowser": false}, {"type": "firefox", "id": "browser=f37826a8-ad36-4e89-b0a8-19b7e9bc5431", "contexts": [{"type": "context", "id": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "pages": []}], "activeContext": "context=263da339-10a2-4549-8e7b-29bd93163fdf", "activeBrowser": false}, {"type": "webkit", "id": "browser=d9496ca6-ca29-43a5-b336-fb59fe29a95c", "contexts": [{"type": "context", "id": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "pages": []}], "activeContext": "context=4373f279-ac83-4fd1-aa0c-31799adec2cc", "activeBrowser": false}, {"type": "chromium", "id": "browser=e78141b8-d4db-48bc-9156-f2897b2281d0", "contexts": [{"type": "context", "id": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "pages": []}], "activeContext": "context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8", "activeBrowser": false}, {"type": "firefox", "id": "browser=efe32b03-6479-4b9c-8580-f7755b9dc7b1", "contexts": [{"type": "context", "id": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "pages": []}], "activeContext": "context=d648dbbf-173e-4bd7-be31-1cf9b2e91365", "activeBrowser": false}, {"type": "webkit", "id": "browser=8a49663b-659b-40e3-8ba6-e9e52eedc0f2", "contexts": [{"type": "context", "id": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "pages": []}], "activeContext": "context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17", "activeBrowser": false}, {"type": "chromium", "id": "browser=c03f1972-d602-4b73-8396-2934bc9a8a1f", "contexts": [{"type": "context", "id": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "pages": []}], "activeContext": "context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99", "activeBrowser": false}, {"type": "firefox", "id": "browser=69401ad1-4059-49da-999f-a423a17a58b7", "contexts": [{"type": "context", "id": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "pages": []}], "activeContext": "context=91dd8a62-1a52-41c1-9943-5039a434436c", "activeBrowser": false}, {"type": "webkit", "id": "browser=59c49e5e-8a2c-4d1b-9fa9-de7c946222b6", "contexts": [{"type": "context", "id": "context=3ec0d141-dc85-408c-a676-8e30ae133245", "pages": []}], "activeContext": "context=3ec0d141-dc85-408c-a676-8e30ae133245", "activeBrowser": false}, {"type": "chromium", "id": "browser=39599ee6-fec7-445f-9f04-5321ce55ec10", "contexts": [{"type": "context", "id": "context=921da65f-a024-41d0-8797-ae57068cb69a", "pages": []}], "activeContext": "context=921da65f-a024-41d0-8797-ae57068cb69a", "activeBrowser": false}, {"type": "firefox", "id": "browser=0e4b2937-3ae0-4498-9352-d855ed182c45", "contexts": [{"type": "context", "id": "context=f917e07e-8688-423e-a52a-6265956e689e", "pages": []}], "activeContext": "context=f917e07e-8688-423e-a52a-6265956e689e", "activeBrowser": false}, {"type": "webkit", "id": "browser=c5aa379b-b6d3-4f3e-876c-2bc7ed3ecef0", "contexts": [{"type": "context", "id": "context=b945eb21-3a6a-47de-b0f5-ec41bb526c73", "activePage": "page=48d10e05-c26a-481d-985b-b345ea8b9bfb", "pages": [{"type": "page", "title": "Dystocracy - YouTube", "url": "https://www.youtube.com/channel/UC0o40n40hxxLlCYbvLveEdA", "id": "page=48d10e05-c26a-481d-985b-b345ea8b9bfb", "timestamp": 1633001632.504}]}], "activeContext": "context=b945eb21-3a6a-47de-b0f5-ec41bb526c73", "activeBrowser": true}]</msg>
+<msg timestamp="20210930 14:34:32.403" level="INFO">Active context id</msg>
+<msg timestamp="20210930 14:34:32.404" level="INFO">Successfully changed active browser</msg>
+<msg timestamp="20210930 14:34:32.405" level="INFO">Returned active context id</msg>
+<msg timestamp="20210930 14:34:32.406" level="INFO">Successfully changed active context</msg>
+<msg timestamp="20210930 14:34:32.415" level="INFO">Successfully closed Page</msg>
+<status status="PASS" starttime="20210930 14:34:32.398" endtime="20210930 14:34:32.415"/>
+</kw>
+<status status="PASS" starttime="20210930 14:33:51.845" endtime="20210930 14:34:32.416"/>
+</iter>
+<status status="PASS" starttime="20210930 14:32:34.020" endtime="20210930 14:34:32.416"/>
+</for>
+<doc>Opens Youtube page from a link with all browsers and streams a video.</doc>
+<status status="PASS" starttime="20210930 14:32:34.017" endtime="20210930 14:34:32.416"/>
+</test>
+<status status="PASS" starttime="20210930 14:31:17.499" endtime="20210930 14:34:32.425"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Browser Demo">Browser Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,244 @@
+{"level":30,"time":"2021-09-30T11:31:21.148Z","pid":16696,"hostname":"LC2207D3","msg":"Listening on 49683"}
+{"level":30,"time":"2021-09-30T11:31:22.267Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:31:22.279Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:22.435Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:31:22.435Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:24.710Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: id=menu-item-97"}
+{"level":30,"time":"2021-09-30T11:31:24.769Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: id=menu-item-157"}
+{"level":30,"time":"2021-09-30T11:31:25.970Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:31:25.993Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=post-146 containing Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their fate. I see small nation states repel empires. I see Europe stand up against the marauding hordes that raped and pillaged her for hundreds of years and say: No more! I see white headstones as far as the eye can see on those cliffs in Normandy. Headstones of men who did not want to go, but went anyway, because they knew it had to be done and they were the ones who had to do it. I see proud men who took a stand to protect what was theirs, and who paid the ultimate price, but did so willingly – gleefully even – knowing that the price was worth it because of who and what they paid it for, and that they would be remembered. I see heroes.\n\nAnd then I see you. And I see how you have failed them. What do you think the men who came before you would say to you if you were to cross the darkest water now and face them? Would they laugh at your weakness? Or would they cry if they saw all their sacrifices over centuries and generations being betrayed by you? How you willingly surrendered to those same hordes they protected their homes, their women and children from. How you sold the freedoms and independence they fought for to faceless centralised governments for a little personal gain? Would they drive their swords through you, and could you honestly say they were not justified in doing so?\n\nWe have become a society of proud victims. The highest value in our inverted world is not to offend. The highest achievement to extract power and resources from better men by being a victim. Not to struggle, build, persevere and create something for you and for others. The modern slave does not strive to rise from under the yoke, but he uses the collective weight of the masses to pull everyone down to his level, so that others will not see how utterly useless he is. Does that make you proud? Does that give you a feeling of satisfaction? Is that all you are capable of? Why were those men on those beaches able to face the machine guns and climb up that cliff, but you can’t face disagreement or climb up off your own ass? Does it make you feel like you are entitled to something just because you belong to a victim class of your own choosing?\n\nWhy would you want to be a victim? Why would you even strive to be equal? Why would you not want to be better? Diversity, tolerance, equality, those are all creeds of slaves. Weak men, who lack the imagination to become something, and the courage to make it happen. Let these worthless squirming victims be victims, and become gods. For gods is what you will be, when you renounce their slave morality, find your will to power, refuse to give them anything and become their masters. You are the descendants of great European men. Protectors, conquerors, explorers, inventors – men who built this world. Act like one and eventually deserve your place on the Elysian Fields by their side. Standing proud for what you accomplished, not what you happened to be.\n\n\n\nSlave Morality\n\n\nOnce proud sons of once proud nations reduced to disciples of the lie\nFrom Pretorian guards and the three hundred to a frail victim class\nAcross the churning Styx those who bled for you curse their progeny\nElysian Fields grow barren as the men grow weak\n\nBehold the death of vitality\nReign of king slave morality\n\nFalse prophets, desecration of power\nDiversity, tolerance, creed of the weak\nThe truth will be revealed\nThe traitor’s fate is sealed\n\nDevoured by wolves, inferiors plead for equality\nTitans have fallen, Olympians rise to end conformity\nFailure reassigned, scapegoats lynched, ressentiment the guiding light\nDaughter of Agenon, find your will to power, brothers of Minos, fight\n\nBehold the death of vitality\nReign of king slave morality\n\nFalse prophets, desecration of power\nDiversity, tolerance, creed of the weak\nThe truth will be revealed\nThe traitor’s fate is sealed\n\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\n\n"}
+{"level":30,"time":"2021-09-30T11:31:26.001Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:26.001Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:31:26.001Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:30.231Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:31:30.282Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:30.937Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:31:30.937Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:33.033Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: id=menu-item-97"}
+{"level":30,"time":"2021-09-30T11:31:33.121Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: id=menu-item-157"}
+{"level":30,"time":"2021-09-30T11:31:34.183Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:31:34.226Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=post-146 containing Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their fate. I see small nation states repel empires. I see Europe stand up against the marauding hordes that raped and pillaged her for hundreds of years and say: No more! I see white headstones as far as the eye can see on those cliffs in Normandy. Headstones of men who did not want to go, but went anyway, because they knew it had to be done and they were the ones who had to do it. I see proud men who took a stand to protect what was theirs, and who paid the ultimate price, but did so willingly – gleefully even – knowing that the price was worth it because of who and what they paid it for, and that they would be remembered. I see heroes.\n\nAnd then I see you. And I see how you have failed them. What do you think the men who came before you would say to you if you were to cross the darkest water now and face them? Would they laugh at your weakness? Or would they cry if they saw all their sacrifices over centuries and generations being betrayed by you? How you willingly surrendered to those same hordes they protected their homes, their women and children from. How you sold the freedoms and independence they fought for to faceless centralised governments for a little personal gain? Would they drive their swords through you, and could you honestly say they were not justified in doing so?\n\nWe have become a society of proud victims. The highest value in our inverted world is not to offend. The highest achievement to extract power and resources from better men by being a victim. Not to struggle, build, persevere and create something for you and for others. The modern slave does not strive to rise from under the yoke, but he uses the collective weight of the masses to pull everyone down to his level, so that others will not see how utterly useless he is. Does that make you proud? Does that give you a feeling of satisfaction? Is that all you are capable of? Why were those men on those beaches able to face the machine guns and climb up that cliff, but you can’t face disagreement or climb up off your own ass? Does it make you feel like you are entitled to something just because you belong to a victim class of your own choosing?\n\nWhy would you want to be a victim? Why would you even strive to be equal? Why would you not want to be better? Diversity, tolerance, equality, those are all creeds of slaves. Weak men, who lack the imagination to become something, and the courage to make it happen. Let these worthless squirming victims be victims, and become gods. For gods is what you will be, when you renounce their slave morality, find your will to power, refuse to give them anything and become their masters. You are the descendants of great European men. Protectors, conquerors, explorers, inventors – men who built this world. Act like one and eventually deserve your place on the Elysian Fields by their side. Standing proud for what you accomplished, not what you happened to be.\n\n\n\nSlave Morality\n\n\nOnce proud sons of once proud nations reduced to disciples of the lie\nFrom Pretorian guards and the three hundred to a frail victim class\nAcross the churning Styx those who bled for you curse their progeny\nElysian Fields grow barren as the men grow weak\n\nBehold the death of vitality\nReign of king slave morality\n\nFalse prophets, desecration of power\nDiversity, tolerance, creed of the weak\nThe truth will be revealed\nThe traitor’s fate is sealed\n\nDevoured by wolves, inferiors plead for equality\nTitans have fallen, Olympians rise to end conformity\nFailure reassigned, scapegoats lynched, ressentiment the guiding light\nDaughter of Agenon, find your will to power, brothers of Minos, fight\n\nBehold the death of vitality\nReign of king slave morality\n\nFalse prophets, desecration of power\nDiversity, tolerance, creed of the weak\nThe truth will be revealed\nThe traitor’s fate is sealed\n\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\n\n"}
+{"level":30,"time":"2021-09-30T11:31:34.235Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:34.235Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:31:34.235Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:37.623Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:31:39.628Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:41.754Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:31:41.754Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:43.514Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: id=menu-item-97"}
+{"level":30,"time":"2021-09-30T11:31:43.717Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: id=menu-item-157"}
+{"level":30,"time":"2021-09-30T11:31:45.117Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:31:45.147Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=post-146 containing Look back into your history. What do you see? I see Roman legions. I see men who took to the seas to explore new worlds. I see a handful of Spartans standing up to thousands, knowing full well their fate. I see small nation states repel empires. I see Europe stand up against the marauding hordes that raped and pillaged her for hundreds of years and say: No more! I see white headstones as far as the eye can see on those cliffs in Normandy. Headstones of men who did not want to go, but went anyway, because they knew it had to be done and they were the ones who had to do it. I see proud men who took a stand to protect what was theirs, and who paid the ultimate price, but did so willingly – gleefully even – knowing that the price was worth it because of who and what they paid it for, and that they would be remembered. I see heroes.\n\nAnd then I see you. And I see how you have failed them. What do you think the men who came before you would say to you if you were to cross the darkest water now and face them? Would they laugh at your weakness? Or would they cry if they saw all their sacrifices over centuries and generations being betrayed by you? How you willingly surrendered to those same hordes they protected their homes, their women and children from. How you sold the freedoms and independence they fought for to faceless centralised governments for a little personal gain? Would they drive their swords through you, and could you honestly say they were not justified in doing so?\n\nWe have become a society of proud victims. The highest value in our inverted world is not to offend. The highest achievement to extract power and resources from better men by being a victim. Not to struggle, build, persevere and create something for you and for others. The modern slave does not strive to rise from under the yoke, but he uses the collective weight of the masses to pull everyone down to his level, so that others will not see how utterly useless he is. Does that make you proud? Does that give you a feeling of satisfaction? Is that all you are capable of? Why were those men on those beaches able to face the machine guns and climb up that cliff, but you can’t face disagreement or climb up off your own ass? Does it make you feel like you are entitled to something just because you belong to a victim class of your own choosing?\n\nWhy would you want to be a victim? Why would you even strive to be equal? Why would you not want to be better? Diversity, tolerance, equality, those are all creeds of slaves. Weak men, who lack the imagination to become something, and the courage to make it happen. Let these worthless squirming victims be victims, and become gods. For gods is what you will be, when you renounce their slave morality, find your will to power, refuse to give them anything and become their masters. You are the descendants of great European men. Protectors, conquerors, explorers, inventors – men who built this world. Act like one and eventually deserve your place on the Elysian Fields by their side. Standing proud for what you accomplished, not what you happened to be.\n\n\nSlave Morality\n\nOnce proud sons of once proud nations reduced to disciples of the lie\nFrom Pretorian guards and the three hundred to a frail victim class\nAcross the churning Styx those who bled for you curse their progeny\nElysian Fields grow barren as the men grow weak\n\nBehold the death of vitality\nReign of king slave morality\n\nFalse prophets, desecration of power\nDiversity, tolerance, creed of the weak\nThe truth will be revealed\nThe traitor’s fate is sealed\n\nDevoured by wolves, inferiors plead for equality\nTitans have fallen, Olympians rise to end conformity\nFailure reassigned, scapegoats lynched, ressentiment the guiding light\nDaughter of Agenon, find your will to power, brothers of Minos, fight\n\nBehold the death of vitality\nReign of king slave morality\n\nFalse prophets, desecration of power\nDiversity, tolerance, creed of the weak\nThe truth will be revealed\nThe traitor’s fate is sealed\n\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\nMen are rewarded by miserable fates in the morality of the slaves\n\n\n"}
+{"level":30,"time":"2021-09-30T11:31:45.154Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:45.154Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:31:45.154Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+================= Original suppressed error =================
+Error: No context for id context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75. Open contexts: context=4373f279-ac83-4fd1-aa0c-31799adec2cc
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27394:23
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26643:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26639:12)
+    at _switchContext (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27382:12)
+    at Object.<anonymous> (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27479:42)
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+=============================================================
+{"level":30,"time":"2021-09-30T11:31:45.665Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:31:45.671Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:45.822Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:31:45.822Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:47.008Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:31:47.025Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Facebook\"]"}
+{"level":30,"time":"2021-09-30T11:31:47.525Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:31:47.526Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:31:50.511Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:31:50.552Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=seo_h1_tag containing Dystocracy"}
+{"level":30,"time":"2021-09-30T11:31:50.558Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:50.558Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:31:50.558Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:52.068Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:31:52.103Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:52.763Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:31:52.763Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:53.940Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:31:53.976Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Facebook\"]"}
+{"level":30,"time":"2021-09-30T11:31:54.450Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:31:54.450Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:31:59.220Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:31:59.264Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=seo_h1_tag containing Dystocracy"}
+{"level":30,"time":"2021-09-30T11:31:59.271Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:59.271Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:31:59.271Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:31:59.784Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:31:59.797Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:31:59.926Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:31:59.926Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:32:01.217Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:32:01.329Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Facebook\"]"}
+{"level":30,"time":"2021-09-30T11:32:01.720Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:32:01.720Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:32:05.451Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:32:05.473Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=seo_h1_tag containing Dystocracy"}
+{"level":30,"time":"2021-09-30T11:32:05.479Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:32:05.479Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:32:05.479Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+================= Original suppressed error =================
+Error: No context for id context=5d36a3a6-3c13-4b88-bbc8-525a925b33a8. Open contexts: context=ea7f5bb8-02a9-4ef3-bddd-9ca9e001ca17
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27394:23
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26643:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26639:12)
+    at _switchContext (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27382:12)
+    at Object.<anonymous> (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27479:42)
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+=============================================================
+{"level":30,"time":"2021-09-30T11:32:05.913Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:32:05.919Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:32:06.062Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:32:06.062Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:32:07.836Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:32:07.861Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Twitter\"]"}
+{"level":30,"time":"2021-09-30T11:32:07.868Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:32:07.868Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:32:10.801Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:32:10.822Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element //*[@href=\"/Dystocracycrew/followers\"] containing 2,396 Followers"}
+{"level":30,"time":"2021-09-30T11:32:10.824Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:32:10.834Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element //*[@href=\"/Dystocracycrew/followers\"] containing 2,396 Followers"}
+{"level":30,"time":"2021-09-30T11:32:10.840Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:32:10.840Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:32:10.840Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:32:12.585Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:32:12.590Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:32:13.212Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:32:13.212Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:32:15.043Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:32:15.085Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Twitter\"]"}
+{"level":30,"time":"2021-09-30T11:32:15.094Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:32:15.094Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:32:18.618Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:32:18.657Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element //*[@href=\"/Dystocracycrew/followers\"] containing 2,396 Followers"}
+{"level":30,"time":"2021-09-30T11:32:18.659Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:32:18.673Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element //*[@href=\"/Dystocracycrew/followers\"] containing 2,396 Followers"}
+{"level":30,"time":"2021-09-30T11:32:18.680Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:32:18.680Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:32:18.680Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:32:19.225Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:32:19.238Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:32:19.377Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:32:19.377Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:32:21.381Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:32:21.405Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Twitter\"]"}
+{"level":30,"time":"2021-09-30T11:32:21.414Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:32:21.414Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:32:21.840Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//*[@href="/Dystocracycrew/followers"]"
+============================================================
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26342:50
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26310:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26291:53)
+    at fulfilled (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26282:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2021-09-30T11:32:31.942Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:32:31.942Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:32:32.425Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:32:33.992Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element //*[@href=\"/Dystocracycrew/followers\"] containing 2,396 Followers"}
+{"level":30,"time":"2021-09-30T11:32:34.000Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:32:34.000Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:32:34.000Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+================= Original suppressed error =================
+Error: No context for id context=9f49e2cd-9174-43cb-bb1b-27f69a69ef99. Open contexts: context=3ec0d141-dc85-408c-a676-8e30ae133245
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27394:23
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26643:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26639:12)
+    at _switchContext (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27382:12)
+    at Object.<anonymous> (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27479:42)
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+=============================================================
+{"level":30,"time":"2021-09-30T11:32:34.682Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:32:34.688Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:32:34.847Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:32:34.847Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:32:36.885Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:32:36.901Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Youtube\"]"}
+{"level":30,"time":"2021-09-30T11:32:36.906Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:32:36.906Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:32:37.951Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@aria-label=\"Agree to the use of cookies and other data for the purposes described\"]"}
+{"level":30,"time":"2021-09-30T11:32:39.176Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:32:39.687Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=subscriber-count containing 25 subscribers"}
+{"level":30,"time":"2021-09-30T11:32:39.690Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"DYSTOCRACY - Slave Morality (Studio Lyric Video)\"]"}
+{"level":30,"time":"2021-09-30T11:33:10.455Z","pid":16696,"hostname":"LC2207D3","msg":"Invoking keyboard action press with params [\"Backspace\"]"}
+{"level":30,"time":"2021-09-30T11:33:12.483Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:33:12.483Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:33:12.483Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:33:14.218Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:33:14.220Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:33:14.892Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:33:14.892Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:33:16.465Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:33:16.497Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Youtube\"]"}
+{"level":30,"time":"2021-09-30T11:33:16.507Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:33:16.507Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:33:17.713Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@aria-label=\"Agree to the use of cookies and other data for the purposes described\"]"}
+{"level":30,"time":"2021-09-30T11:33:18.961Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:33:19.654Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=subscriber-count containing 25 subscribers"}
+{"level":30,"time":"2021-09-30T11:33:19.658Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"DYSTOCRACY - Slave Morality (Studio Lyric Video)\"]"}
+{"level":30,"time":"2021-09-30T11:33:49.805Z","pid":16696,"hostname":"LC2207D3","msg":"Invoking keyboard action press with params [\"Backspace\"]"}
+{"level":30,"time":"2021-09-30T11:33:51.835Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:33:51.835Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:33:51.835Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:33:52.344Z","pid":16696,"hostname":"LC2207D3","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-09-30T11:33:52.357Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:33:52.504Z","pid":16696,"hostname":"LC2207D3","msg":"Video path: undefined"}
+{"level":30,"time":"2021-09-30T11:33:52.504Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+{"level":30,"time":"2021-09-30T11:33:54.323Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: false"}
+{"level":30,"time":"2021-09-30T11:33:54.357Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"Youtube\"]"}
+{"level":30,"time":"2021-09-30T11:33:54.364Z","pid":16696,"hostname":"LC2207D3","msg":"element= selector parsed without children"}
+{"level":30,"time":"2021-09-30T11:33:54.364Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: undefined"}
+{"level":30,"time":"2021-09-30T11:33:55.900Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@aria-label=\"Agree to the use of cookies and other data for the purposes described\"]"}
+{"level":30,"time":"2021-09-30T11:33:59.282Z","pid":16696,"hostname":"LC2207D3","msg":"Strict mode is: true"}
+{"level":30,"time":"2021-09-30T11:33:59.312Z","pid":16696,"hostname":"LC2207D3","msg":"Retrieved text for element id=subscriber-count containing 25 subscribers"}
+{"level":30,"time":"2021-09-30T11:33:59.314Z","pid":16696,"hostname":"LC2207D3","msg":"Page|Frame|Element resolved elementSelector: //*[@title=\"DYSTOCRACY - Slave Morality (Studio Lyric Video)\"]"}
+{"level":30,"time":"2021-09-30T11:34:30.042Z","pid":16696,"hostname":"LC2207D3","msg":"Invoking keyboard action press with params [\"Backspace\"]"}
+{"level":30,"time":"2021-09-30T11:34:32.405Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active context"}
+{"level":30,"time":"2021-09-30T11:34:32.405Z","pid":16696,"hostname":"LC2207D3","msg":"Changing current active page"}
+{"level":30,"time":"2021-09-30T11:34:32.405Z","pid":16696,"hostname":"LC2207D3","msg":"Changed active page"}
+================= Original suppressed error =================
+Error: No context for id context=921da65f-a024-41d0-8797-ae57068cb69a. Open contexts: context=b945eb21-3a6a-47de-b0f5-ec41bb526c73
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27394:23
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26643:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26639:12)
+    at _switchContext (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27382:12)
+    at Object.<anonymous> (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27479:42)
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+=============================================================
+================= Original suppressed error =================
+Error: No context for id context=3d909c5c-92e5-4b4f-ad93-de1c0273fe75. Open contexts: context=b945eb21-3a6a-47de-b0f5-ec41bb526c73
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27394:23
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+    at C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26643:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/playwright-state.ts.__awaiter (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26639:12)
+    at _switchContext (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27382:12)
+    at Object.<anonymous> (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:27479:42)
+    at step (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26668:23)
+    at Object.next (C:\Users\valtteri.heiskanen\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26649:53)
+=============================================================
