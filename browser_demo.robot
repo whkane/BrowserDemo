@@ -4,6 +4,7 @@ Library   Browser
 *** Variables ***
 @{browsers}         chromium    firefox     webkit
 ${url}              http://dystocracy.com/
+${spotify_url}      https://open.spotify.com/album/3P9l1i2XMdHnlCkFJt1dKX?si=eha9DCe9TAaOUbmLWUlLoQ&dl_branch=1
 ${timeout}          5s
 
 *** Test Cases ***
@@ -77,5 +78,16 @@ Open Youtube
         Sleep           30s
         Keyboard Key    press          Backspace
         Sleep           2s
+        Close Page      CURRENT
+    END
+
+Open Spotify
+    [Documentation]     Opens Spotify page to the band's latest EP and plays every song for 30 sec.
+
+    FOR     ${browser}  IN  @{browsers}
+        New Browser     ${browser}     False
+        New Page        ${spotify_url}
+        Wait Until Network Is Idle     timeout=${timeout}
+        Click           id=tippy-36
         Close Page      CURRENT
     END
