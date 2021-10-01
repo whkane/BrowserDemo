@@ -2,17 +2,18 @@
 Force Tags          Dystocracy
 
 Library             Browser
-Library             RequestsLibrary
+Library             RPA.Desktop.Windows
 
 *** Variables ***
 @{browsers}         chromium    firefox     webkit
 ${url}              http://dystocracy.com/
-${spotify_url}      https://open.spotify.com/album/3P9l1i2XMdHnlCkFJt1dKX?si=eha9DCe9TAaOUbmLWUlLoQ&dl_branch=1
+${search}           Dystocracy
 ${bandcamp_url}     https://dystocracy.bandcamp.com/
 @{eps}              Dystocracy      Slave Morality
 @{st_songs}         Play Dachau       Play Dystocracy     Play Thousand Fiery Lashes      Play Final Abyss
 @{sm_songs}         Play Manifold       Play Slave Morality     Play Forever Open Eyes      Play From the Ruins of War (Year 6)
 ${timeout}          5s
+${play_duration}    30s
 
 *** Test Cases ***
 Page Ids And Text
@@ -29,7 +30,7 @@ Page Ids And Text
         Wait Until Network Is Idle     timeout=${timeout}
         Click           id=menu-item-157
         Wait Until Network Is Idle     timeout=${timeout}
-        ${text} =       Get Text       id=post-146
+        ${text} =       Browser.Get Text       id=post-146
         Log             ${text}
         Close Page      CURRENT
     END
@@ -46,7 +47,7 @@ Open Facebook
         Click           ${elements}[0]
         Wait Until Network Is Idle     timeout=${timeout}
         Click           //*[@title="Hyväksy kaikki"]
-        ${text} =       Get Text       id=seo_h1_tag
+        ${text} =       Browser.Get Text       id=seo_h1_tag
         Log             ${text}
         Close Page      CURRENT
     END
@@ -62,10 +63,10 @@ Open Twitter
         ${elements}=    Get Elements   //*[@title="Twitter"]
         Click           ${elements}[0]
         Wait Until Network Is Idle     timeout=${timeout}
-        ${status}=      Run Keyword And Return Status  Get Text       //*[@href="/Dystocracycrew/followers"]
+        ${status}=      Run Keyword And Return Status  Browser.Get Text       //*[@href="/Dystocracycrew/followers"]
         Run Keyword If  not ${status}  Click           ${elements}[0]
         Click           text=Close
-        ${text} =       Get Text       //*[@href="/Dystocracycrew/followers"]
+        ${text} =       Browser.Get Text       //*[@href="/Dystocracycrew/followers"]
         Log             ${text}
         Close Page      CURRENT
     END
@@ -83,31 +84,28 @@ Open Youtube
         Wait Until Network Is Idle     timeout=${timeout}
         Run Keyword And Ignore Error   Click    //*[@aria-label="Agree to the use of cookies and other data for the purposes described"]
         Wait Until Network Is Idle     timeout=${timeout}
-        ${text} =       Get Text       id=subscriber-count
+        ${text} =       Browser.Get Text       id=subscriber-count
         Log             ${text}
         Click           //*[@title="DYSTOCRACY - Slave Morality (Studio Lyric Video)"]
         Wait Until Network Is Idle     timeout=${timeout}
-        #Let the video play for 30s and pause.
-        Sleep           30s
+        #Let the video play for a duration and pause.
+        Sleep           ${play_duration}
         Keyboard Key    press          Backspace
         Sleep           2s
         Close Page      CURRENT
     END
 
 Open Spotify
-    [Documentation]     Opens Spotify page to the band's latest EP.
+    [Documentation]     Opens Spotify on Windows desktop and plays songs from band's catalogue.
     [Tags]              Spotify
 
-    FOR     ${browser}  IN  @{browsers}
-        New Browser     ${browser}     False
-        New Page        ${spotify_url}
-        Wait Until Network Is Idle     timeout=${timeout}
-        Sleep           2s
-        Close Page      CURRENT
-    END
+    Open From Search    Spotify         Spotify Free
+    Sleep               ${timeout}
+    Play Random Songs   ${search}
+    Close All Applications
 
 Open Bandcamp
-    [Documentation]     Opens Bandcamp page to the band's latest EP and plays every song for 30 sec.
+    [Documentation]     Opens Bandcamp page to the band's EP's and plays every song for 30 sec.
     [Tags]              Bandcamp
 
     FOR     ${browser}  IN  @{browsers}
@@ -130,8 +128,30 @@ Play EP Through
     Wait Until Network Is Idle     timeout=${timeout}
     FOR   ${song}   IN      @{songs}
         Click       //*[@aria-label="${song}"]
-        Sleep       30s
+        Sleep       ${play_duration}
         Wait Until Network Is Idle     timeout=${timeout}
         Click       //*[@aria-label="${song}"]
     END
     Wait Until Network Is Idle     timeout=${timeout}
+
+Play Random Songs
+    [Documentation]     Plays random songs in Spotify for 30 sec duration.
+    [Arguments]         ${search}
+
+    Send Keys To Input  ^l
+    Send Keys To Input  ${search}
+    Send Keys To Input  {ENTER}        with_enter=False
+    Send Keys To Input  {TAB}{TAB}     with_enter=False
+    Send Keys To Input  {ENTER}        with_enter=False
+    Sleep               ${play_duration}
+    Send Keys To Input  {ENTER}        with_enter=False
+    Send Keys To Input  {TAB}{TAB}
+    Send Keys To Input  {ENTER}        with_enter=False
+    Send Keys To Input  {TAB}          with_enter=False
+
+    FOR   ${index}   IN RANGE   ${7}
+        Send Keys To Input  {DOWN}     with_enter=False
+        Send Keys To Input  {ENTER}    with_enter=False
+        Sleep               ${play_duration}
+        Send Keys To Input  {ENTER}    with_enter=False
+    END
